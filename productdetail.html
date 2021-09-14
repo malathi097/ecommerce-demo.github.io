@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>E-Commerce Website</title>
+    <!-- <link rel="stylesheet" href="e-commerce.css"> -->
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-brand{
+    font-size: 2rem;
+    color: black;
+}
+.navbar-brand:hover{
+    color: black;
+}
+.nav-link{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+}
+.nav-link:hover{
+    color: black;
+}
+.search{
+    height: 40px;
+    width: 80%;
+    border-radius: 60px;
+    outline: none;
+    margin-right: -35px;
+    border:2px solid rgb(248, 26, 92);
+}
+.logo{
+    height: 50px;
+}
+.btn0{
+    height: 40px;
+    width: 40%;
+    outline: none;
+    border: none;
+    background: rgb(248,26,92);
+    border-radius: 60px;
+    color: white;
+    font-weight: 700;
+}
+
+        h3{
+    font-size: 16px;
+    font-weight: 600;
+}
+.product h5{
+    font-size: 10px;
+    font-weight: 600;
+}
+.star{
+    color:goldenrod;
+    padding: 2px;
+}
+.product img{
+    background-color: rgb(180, 176, 176);
+    height: 60%;
+    width:100%;
+    transition: 0.3s all;
+}
+
+.product{
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+.product:hover img{
+    opacity: 0.7;
+}
+.product .buy1{
+    background-color: rgb(224, 75, 108);
+    transform: translateY(20px);
+    opacity:0;
+    transition: 0.3s all;
+   font-size: 0.8rem;
+    font-weight: 800;
+    outline: none;
+    border: none;
+        cursor:pointer;
+        padding: 10px 20px;
+        text-transform: uppercase;
+       cursor: pointer;
+        border-radius:10px;
+        transition:0.3s ease;
+  
+}
+.product:hover .buy1{
+   
+    transform: translateY(0);
+    opacity:1;
+    cursor: pointer;
+  
+}
+.footer{
+    background-color: black;
+    color: white;
+}
+.btn2{
+    height: 45px;
+    width: 100px;
+    background: white;
+    margin-left: -20px;
+    border: 2px solid white;
+    font-weight: 600;
+}
+.footer input{
+    height: 45px;
+    width: 55%;
+    border: 2px solid white;
+    outline: none;
+    background: black;
+    color: white;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer p{
+    margin:0;
+}
+ 
+.fa{
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+    </style>
+  </head>
+<body>
+      <!-- NAVBAR  -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <h1 style="color: rgb(76, 155, 51);">MALATHI</h1>
+            <button class="navbar-toggler"  data-toggle="collapse" data-target="#navbarScroll" >
+                <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav m-auto my-2 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">Products</a>
+                    </li>    
+                    <li class="nav-item">
+                                <a class="nav-link" href="#" >Contact</a>
+                    </li>
+                </ul>    
+                <form class="d-flex">
+                    <input class="px-2 search" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn0 " type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav> 
+
+    <section id="spro" class="container my-5 pt-5">
+        <div class="row mt-5">
+            <div class="col-lg-5 ">
+                <img class="img-fluid pb-1" src="./images/onion.jpg">
+                
+            </div>
+            <div class="col-lg-5 col-md-12 col-12">
+                <h3>Fresho Onion-Organically Grown</h3>
+                <h4>1kg</h4>
+                <button style="padding: 3px;border-radius: 5px;background-color: coral;">Add to cart</button>
+                <input value="1" type="number">
+                <button style="padding: 3px; width: 60px;border-radius: 5px;background-color: coral;">Save</button>
+                <h4>Product details</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis beatae odit at possimus ad
+                    eligendi nulla molestiae enim recusandae illum iste fuga, vitae unde eaque nostrum, dolorum dolores
+                    odio mollitia!
+                    Exercitationem maiores quae nihil, possimus perferendis dolore earum. Deleniti illo cum accusantium
+                    velit ducimus aliquam impedit quis? Dicta recusandae, magnam odit, ad repellendus porro omnis
+                    dolores cum, eveniet necessitatibus quos?</p>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container mt-3 py-1">
+        <h3 id="style" class="text-center">related Products</h3>
+    </div>
+    <div onclick="window.location.href='shoes.html';" class="row mx-auto container">
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="./images/orange.jpg">
+            <div class="star">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h3>Oranges</h3>
+            <h4>1dozen-30Rs</h4>
+            <button class="buy1">Buy now</button>
+        </div>
+        <div onclick="window.location.href='shoes.html';" class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="./images/pomegranate.jpg">
+            <div class="star">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h3>Pomegranate</h3>
+            <h4>6pcs-190Rs</h4>
+            <button class="buy1">Buy Now</button>
+        </div>
+        <div onclick="window.location.href='shoes.html';" class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="./images/apple.jpg">
+            <div class="star">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h3>Apple</h3>
+            <h4>1kg-Rs70</h4>
+            <button class="buy1">Buy Now</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="./images/beetroot.jpg">
+            <div class="star">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h3>Beetroot</h3>
+            <h4>1kg-Rs20</h4>
+            <button class="buy1">Buy Now</button>
+        </div>
+
+    </div>
+    <br>
+     <!-- FOOTER sECTION -->
+     <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 m-auto text-center">
+                    <h1>Join Our Shopping</h1>
+                    <input type="email" placeholder="Enter your email">
+                    <button class="btn2">Submit</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-11 m-auto text-center">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h5 class="pb-3">Customer Care</h5>
+                            <p>Regular</p>
+                            <p>Ontime</p>
+                            <p>Always care</p>
+                        </div>
+                        <div class="col-lg-4">
+                          <h5>Help</h5>
+                          <p>FAQs</p>
+                          <p>Contact Us</p>
+                          <p>Vendor Connect</p>
+                      </div>
+                      <div class="col-lg-4">
+                          <h5 class="pb-3">Customer Care</h5>
+                          <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                          <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                          <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                         <span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+  
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
